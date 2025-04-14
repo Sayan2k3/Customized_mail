@@ -4,6 +4,7 @@ langchain-groq
 unstructured
 selenium
 chromadb
+duckdb
 streamlit
 pandas
 python-dotenv
