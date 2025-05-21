@@ -8,3 +8,4 @@ duckdb
 streamlit
 pandas
 python-dotenv
+pysqlite3-binary  # ✅ Add this line to patch sqlite3 with a compatible version
