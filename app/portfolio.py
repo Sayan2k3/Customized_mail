@@ -1,7 +1,13 @@
+# PATCH: use pysqlite3 to bypass system sqlite3 version error
+import sys
+import pysqlite3
+
+# Replace built-in sqlite3 with compatible version
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
 import pandas as pd
 import chromadb
 import uuid
-
 
 class Portfolio:
     def __init__(self, file_path="app/resource/my_portfolio.csv"):
